@@ -1,0 +1,5 @@
+*.o
+*.html
+test/
+*.sam
+deBGA

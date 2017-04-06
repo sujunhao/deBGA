@@ -580,7 +580,7 @@ int load_input_map(int argc, char *argv[])
 		max_single_score_r = max_pair_score_r;
 		seed_filter_pos_num_singlen = seed_filter_pos_numn;
 
-		if(strcmp(argv[optind + 2] + strlen(argv[optind + 2]) - 3, ".fq") || strcmp(argv[optind + 2] + strlen(argv[optind + 2]) - 6, ".fastq"))
+		if(strcmp(argv[optind + 2] + strlen(argv[optind + 2]) - 3, ".fq")==0 || strcmp(argv[optind + 2] + strlen(argv[optind + 2]) - 6, ".fastq")==0)
 		{
 			fprintf(stderr, "result file cannot be .fq or .fastq\n");
 			exit(1);
