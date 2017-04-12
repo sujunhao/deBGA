@@ -1023,6 +1023,7 @@ void load_index_file()
 		fscanf(fp_chr, "%s", chr_line_content);
 		//fgets(chr_line_content, MAX_CHR_NAME_LENGTH, fp_chr);
 
+		//if line is odd
 		if((chr_line_n & 0X1) == 0)
 		{
 			strcpy(chr_names[chr_file_n], chr_line_content);
